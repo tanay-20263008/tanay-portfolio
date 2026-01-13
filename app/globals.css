@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background: #ffffff;
+  }
+  
+  body {
+    @apply bg-white text-gray-900;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  ::selection {
+    @apply bg-blue-100 text-blue-800;
+  }
+  
+  ::-webkit-scrollbar {
+    @apply w-3;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-blue-400 to-blue-600 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply from-blue-500 to-blue-700;
+  }
+  
+  /* Smooth transitions */
+  * {
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  }
+}
+
+@layer utilities {
+  .text-gradient-blue {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-500;
+  }
+  
+  .text-gradient-medical {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-teal-500 to-emerald-600;
+  }
+  
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .medical-shadow {
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.1);
+  }
+  
+  .gradient-border {
+    position: relative;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(45deg, #3B82F6, #10B981, #8B5CF6) border-box;
+    border: 2px solid transparent;
+  }
+}
+
+/* Custom Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.9; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes slide-up {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation Classes */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, #f0f9ff 0%, #e0f2fe 50%, #f0f9ff 100%);
+  background-size: 200% auto;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.6s ease-out;
+}
+
+/* Custom focus styles for accessibility */
+*:focus-visible {
+  @apply outline-2 outline-blue-500 outline-offset-2;
+}
+
+/* Form element styling */
+input, textarea, select {
+  @apply rounded-lg border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200;
+}
+
+/* Medical badge styling */
+.medical-badge {
+  @apply inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-700 border border-blue-200 font-medium;
+}
+
+/* Stats card styling */
+.stats-card {
+  @apply p-6 rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow;
+}
+
+/* Testimonial card styling */
+.testimonial-card {
+  @apply bg-white rounded-xl border border-gray-200 p-8 shadow-sm hover:shadow-md transition-shadow;
+}
+
+/* Section spacing */
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+/* Typography enhancements */
+.medical-heading {
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
+}
+
+.medical-subheading {
+  @apply text-xl md:text-2xl text-gray-600 leading-relaxed;
+}
+
+/* Gradient backgrounds */
+.bg-medical-gradient {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f7ff 100%);
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+}
+
+/* Button styles */
+.btn-primary {
+  @apply px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-sm hover:shadow-md;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-white text-blue-600 border border-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors;
+}
+
+/* Navigation styling */
+.nav-link {
+  @apply text-gray-700 hover:text-blue-600 font-medium transition-colors;
+}
+
+/* Medical icon styling */
+.medical-icon {
+  @apply p-3 rounded-lg bg-blue-50 text-blue-600;
+}
+
+/* Progress bar */
+.progress-bar {
+  @apply h-2 bg-gray-200 rounded-full overflow-hidden;
+}
+
+.progress-fill {
+  @apply h-full rounded-full bg-gradient-to-r from-blue-500 to-blue-600;
+}
+
+/* Custom utilities for medical theme */
+.bg-pulse-blue {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* Ensure images don't overflow */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* Better list styling */
+ul {
+  @apply space-y-2;
+}
+
+li {
+  @apply flex items-start gap-3;
+}
+
+/* Quote styling */
+blockquote {
+  @apply border-l-4 border-blue-500 pl-6 italic text-gray-700 my-6;
+}
+
+/* Code styling for tech stack */
+code {
+  @apply px-2 py-1 bg-gray-100 rounded text-sm font-mono text-gray-800;
+}
+
+/* Table styling for data presentation */
+table {
+  @apply min-w-full divide-y divide-gray-200;
+}
+
+th {
+  @apply px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+td {
+  @apply px-6 py-4 whitespace-nowrap text-sm text-gray-900;
+}
+
+/* Ensure smooth loading */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
