@@ -39,7 +39,6 @@ export default function Home() {
     '/images/projects/pem-system-5.jpg',
     '/images/projects/pem-system-6.jpg',
     '/images/projects/pem-system-7.jpg'
-   
   ]
 
   const handleZoom = (imageSrc, type, index) => {
@@ -136,29 +135,29 @@ export default function Home() {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-800/50 rounded-full border border-gray-700 mb-8 backdrop-blur-sm">
                 <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
-                <span className="text-sm font-medium text-cyan-300">Medical Systems Developer • Nashik, Maharashtra</span>
+                <span className="text-base font-medium text-cyan-300">Medical Web Developer • Nashik, Maharashtra</span>
               </div>
 
               {/* Headline */}
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-white">
-                Custom Medical Practice<br />
+                I Build Custom Systems<br />
                 <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
-                  Management Systems
+                  That Doctors Actually Use
                 </span>
               </h1>
 
               {/* Subheadline */}
               <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-                I build tailored practice management systems for doctors and medical institutions—helping reduce administrative work and improve clinic efficiency through smart automation.
+                Fully custom web applications for medical practices—built from scratch, designed for your exact workflow. No templates, no compromises.
               </p>
 
               {/* Key Benefits */}
               <div className="flex flex-wrap justify-center gap-4 mb-12">
                 {[
-                  { icon: <FileText className="w-5 h-5" />, text: 'Automated financial tracking' },
-                  { icon: <Bell className="w-5 h-5" />, text: 'Patient follow-up reminders' },
-                  { icon: <Clock className="w-5 h-5" />, text: 'Save 2-3 hours daily' },
-                  { icon: <Shield className="w-5 h-5" />, text: 'Secure & reliable' }
+                  { icon: <Clock className="w-5 h-5" />, text: '1+ hour saved daily' },
+                  { icon: <Database className="w-5 h-5" />, text: 'Everything in one place' },
+                  { icon: <Shield className="w-5 h-5" />, text: 'Built in 10-14 days' },
+                  { icon: <Zap className="w-5 h-5" />, text: 'Continuous support' }
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 px-4 py-3 bg-gray-800/50 rounded-xl border border-gray-700">
                     <div className="text-cyan-400">{item.icon}</div>
@@ -171,15 +170,15 @@ export default function Home() {
               <div className="flex flex-wrap justify-center gap-6 mb-12">
                 <div className="flex items-center gap-3 px-6 py-3 bg-gray-800/50 rounded-xl border border-gray-700 backdrop-blur-sm">
                   <Check className="w-5 h-5 text-green-400" />
-                  <span className="text-gray-300">2 Systems Live & Working</span>
+                  <span className="text-gray-300">2 Live Systems Running</span>
                 </div>
                 <div className="flex items-center gap-3 px-6 py-3 bg-gray-800/50 rounded-xl border border-gray-700 backdrop-blur-sm">
                   <Check className="w-5 h-5 text-green-400" />
-                  <span className="text-gray-300">6+ Months Running Smoothly</span>
+                  <span className="text-gray-300">Used Daily Since Deployment</span>
                 </div>
                 <div className="flex items-center gap-3 px-6 py-3 bg-gray-800/50 rounded-xl border border-gray-700 backdrop-blur-sm">
                   <Check className="w-5 h-5 text-green-400" />
-                  <span className="text-gray-300">Serving Nashik & across India</span>
+                  <span className="text-gray-300">Serving Nashik & India</span>
                 </div>
               </div>
 
@@ -189,14 +188,14 @@ export default function Home() {
                   href="#projects" 
                   className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-xl font-semibold hover:opacity-90 transition-all shadow-lg hover:shadow-xl"
                 >
-                  View My Work
+                  See What I've Built
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a 
                   href="#contact" 
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gray-800/50 text-white rounded-xl font-semibold hover:bg-gray-800 transition-all border border-gray-700"
                 >
-                  Get in Touch
+                  Discuss Your Needs
                 </a>
               </div>
             </div>
@@ -208,197 +207,218 @@ export default function Home() {
           <div className="container mx-auto px-6 lg:px-12">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-                Featured Projects
+                Live Projects
               </h2>
               <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-                Custom systems built specifically for medical practice workflows
+                Real systems I've built for real medical practices—all custom-coded from the ground up
               </p>
             </div>
 
-         {/* Project 1: Practice Management System */}
-<div className="mb-32">
-  <div className="grid lg:grid-cols-2 gap-16 items-center">
-    <div>
-      <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-green-900/30 text-green-300 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
-        <Zap className="w-4 h-4" />
-        Live & Saving 2+ Hours Daily • Since July 2024
-      </div>
-      
-    <h3 className="text-3xl font-bold text-white mb-4 whitespace-nowrap">Complete Practice Automation System</h3>
-
-
-      <p className="text-xl text-gray-300 mb-8">
-        Custom-built for a senior cardiologist couple—automates their entire practice finances, task management, and patient follow-ups. No more manual Excel sheets, no missed dues, and CA-ready reports every month.
-      </p>
-      
-      {/* Doctor's Experience */}
-      <div className="bg-gradient-to-r from-green-900/20 to-emerald-900/10 p-6 rounded-xl border border-green-900/30 mb-8">
-        <div className="flex items-center gap-3 mb-3">
-          <Sparkles className="w-5 h-5 text-green-400" />
-          <span className="font-bold text-white">What the Doctor Experiences Now:</span>
-        </div>
-        <p className="text-gray-300">
-          "My CA gets perfect monthly reports without asking. I know exactly where every rupee goes—home, clinic, or personal. Tasks remind themselves. And I've stopped missing patient follow-ups entirely."
-        </p>
-      </div>
-      
-      {/* How It Works - Clear Benefits */}
-      <div className="space-y-4 mb-8">
-        <div className="flex items-start gap-3">
-          <div className="p-2 rounded-lg bg-green-900/30 text-green-300 flex-shrink-0">
-            <TrendingUp className="w-5 h-5" />
-          </div>
-          <div>
-            <h4 className="font-semibold text-white mb-1">Smart Financial Dashboard</h4>
-            <p className="text-gray-300 text-sm">
-              Automatically calculates monthly income vs expenses with visual charts. Separate tracking for home, clinic, and personal expenses. Set budgets—get alerts at 80% utilization. Export CA-ready Excel sheets with one click.
-            </p>
-          </div>
-        </div>
-        
-        <div className="flex items-start gap-3">
-          <div className="p-2 rounded-lg bg-blue-900/30 text-blue-300 flex-shrink-0">
-            <Bell className="w-5 h-5" />
-          </div>
-          <div>
-            <h4 className="font-semibold text-white mb-1">Never-Miss Task & Dues System</h4>
-            <p className="text-gray-300 text-sm">
-              Daily/yearly tasks with "fixed repeat" options. Dues (receivable/payable) auto-remind 2 days before deadlines. Export task lists. Filter any data by date, category, or payment method. Everything searchable, everything sortable.
-            </p>
-          </div>
-        </div>
-        
-        <div className="flex items-start gap-3">
-          <div className="p-2 rounded-lg bg-purple-900/30 text-purple-300 flex-shrink-0">
-            <FileText className="w-5 h-5" />
-          </div>
-          <div>
-            <h4 className="font-semibold text-white mb-1">Complete Payment Tracking</h4>
-            <p className="text-gray-300 text-sm">
-              Track income by source (consultations/procedures/other) and payment mode (cash/online/card). Expense tracking with category tags. Real-time net balance calculation. Historical data always accessible with intelligent filters.
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      {/* Key Results */}
-      <div className="mb-8">
-        <h4 className="font-semibold text-white mb-4 flex items-center gap-2">
-          <Target className="w-5 h-5 text-cyan-400" />
-          What Changed for the Practice:
-        </h4>
-        <div className="grid grid-cols-2 gap-4">
-          {[
-            { stat: '2-3 Hours', desc: 'Daily paperwork eliminated' },
-            { stat: '100%', desc: 'Follow-up compliance' },
-            { stat: '15 Min', desc: 'Monthly CA reporting time' },
-            { stat: '0 Missed', desc: 'Dues since implementation' }
-          ].map((result, idx) => (
-            <div key={idx} className="p-4 bg-gray-800/30 rounded-xl border border-gray-700">
-              <div className="text-xl font-bold text-green-400">{result.stat}</div>
-              <div className="text-sm text-gray-400">{result.desc}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-      
-      {/* Security Note */}
-      <div className="p-4 bg-gray-800/50 rounded-xl border border-gray-700">
-        <div className="flex items-center gap-3">
-          <Shield className="w-5 h-5 text-green-400" />
-          <span className="text-sm text-gray-300">
-            <span className="font-semibold text-white">Private & Secure:</span> Built exclusively for their practice. No user registration. All data encrypted. Accessible only to authorized clinic members.
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    {/* Screenshot Carousel */}
-    <div className="relative">
-      <div className="rounded-2xl overflow-hidden border border-gray-700 bg-gray-800 shadow-xl shadow-black/20">
-        {/* Browser Mockup Bar */}
-        <div className="bg-gray-900 border-b border-gray-700 p-4">
-          <div className="flex items-center gap-2">
-            <div className="flex gap-2">
-              <div className="w-3 h-3 rounded-full bg-red-400"></div>
-              <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
-              <div className="w-3 h-3 rounded-full bg-green-400"></div>
-            </div>
-            <div className="flex-1 text-center">
-              <div className="text-sm text-gray-500">Practice Management System • Live Since July 2024</div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Image Container */}
-        <div className="relative h-96 bg-gray-900">
-          <div 
-            className="absolute inset-0 cursor-pointer"
-            onClick={() => handleZoom(doctorScreenshots[doctorCurrentSlide], 'doctor', doctorCurrentSlide)}
-          >
-            <div className="relative w-full h-full">
-              <Image
-                src={doctorScreenshots[doctorCurrentSlide]}
-                alt={`Practice Management System Screenshot ${doctorCurrentSlide + 1}`}
-                fill
-                className="object-contain"
-                sizes="(max-width: 800px) 100vw, 800px"
-                priority={doctorCurrentSlide === 0}
-              />
-              {/* Slide Label */}
-              <div className="absolute top-4 left-1/2 -translate-x-1/2 pointer-events-none z-20">
-                <div className="bg-gradient-to-r from-gray-900/90 to-gray-800/90 backdrop-blur-md px-5 py-2.5 rounded-xl border border-cyan-600/40 shadow-lg">
-                  <div className="text-sm font-bold text-cyan-300 tracking-wider drop-shadow-lg">
-                    {['DASHBOARD', 'EXPENSE TRACKER', 'INCOME MANAGER', 'TASK SYSTEM', 'ANALYTICS'][doctorCurrentSlide]}
+            {/* Project 1: Practice Management System */}
+            <div className="mb-32">
+              <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                  <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-green-900/30 text-green-300 rounded-full text-base font-medium mb-6 backdrop-blur-sm">
+                    <Zap className="w-4 h-4" />
+                    Live & Active • Running Since Sept 2025
                   </div>
-                  <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-cyan-400 rotate-45"></div>
+                  
+                  <h3 className="text-3xl font-bold text-white mb-4">Complete Practice Management System</h3>
+
+                  <p className="text-xl text-gray-300 mb-8">
+                    Built for Dr. Vrushinit Saudagar's homeopathy practice—replaces 8+ Excel files with one centralized system. Tracks finances, tasks, and dues automatically.
+                  </p>
+                  
+                  {/* Doctor's Real Feedback */}
+                  <div className="bg-gradient-to-r from-green-900/20 to-emerald-900/10 p-6 rounded-xl border border-green-900/30 mb-8">
+                    <div className="flex items-center gap-3 mb-3">
+                      <Sparkles className="w-5 h-5 text-green-400" />
+                      <span className="text-lg font-bold text-white">Dr. Saudagar's Experience:</span>
+                    </div>
+                    <p className="text-lg text-gray-300 arial mb-2">
+                      "Very well designed and made. It's very useful—we get all details in one place. This saves time and all the manual work I was doing before."
+                    </p>
+                    <p className="text-base text-green-300 font-medium">
+                      — Dr. Vrushinit Saudagar, Best Homeopath
+                    </p>
+                  </div>
+                  
+                  {/* The Actual Problem Solved */}
+                  <div className="mb-8">
+                    <h4 className="font-semibold text-white mb-4 flex items-center gap-2">
+                      <Target className="w-5 h-5 text-cyan-400" />
+                      What Changed:
+                    </h4>
+                    <div className="space-y-3">
+                      <div className="flex items-start gap-3">
+                        <div className="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2 flex-shrink-0"></div>
+                        <div>
+                          <span className="text-lg text-white font-medium">Before:</span>
+                          <span className="text-lg text-gray-300"> Managing 8+ Excel files for different aspects of the practice. Spending 1.5 hours daily on manual data entry and calculations.</span>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <div className="w-1.5 h-1.5 rounded-full bg-green-400 mt-2 flex-shrink-0"></div>
+                        <div>
+                          <span className="text-lg text-white font-medium">Now:</span>
+                          <span className="text-lg text-gray-300"> One system handles everything. Saves 1+ hour daily. All data in one searchable place with automatic calculations.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Core Features That Work */}
+                  <div className="space-y-4 mb-8">
+                    <div className="flex items-start gap-3">
+                      <div className="p-2 rounded-lg bg-blue-900/30 text-blue-300 flex-shrink-0">
+                        <TrendingUp className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-semibold text-white mb-1">Smart Income & Expense Tracking</h4>
+                        <p className="text-gray-300 text-base">
+                          Track every rupee by source (consultations/medicines/other) and payment mode (cash/online/card). Separate home vs clinic expenses. Visual charts show monthly trends. Export CA-ready reports with one click.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-3">
+                      <div className="p-2 rounded-lg bg-purple-900/30 text-purple-300 flex-shrink-0">
+                        <Bell className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-semibold text-white mb-1">Task & Dues Management</h4>
+                        <p className="text-gray-300 text-base">
+                          Daily/yearly tasks with repeat options. Dues (receivable/payable) with built-in reminders 2 days before deadlines. Filter by date, category, payment method. Everything searchable.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-3">
+                      <div className="p-2 rounded-lg bg-green-900/30 text-green-300 flex-shrink-0">
+                        <FileText className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-semibold text-white mb-1">Analytics & Budget Controls</h4>
+                        <p className="text-gray-300 text-base">
+                          Set monthly budgets—get alerts at 80% utilization. Real-time net balance calculation. Historical data always accessible. Filter and export any date range instantly.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Built With */}
+                  <div className="mb-8">
+                    <h4 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                      <Database className="w-5 h-5 text-cyan-400" />
+                      Technical Stack:
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
+                      {['HTML5/CSS3', 'JavaScript (ES6+)', 'MySQL Database', 'Mobile-Responsive', 'Secure Authentication', 'Data Export (Excel)'].map((tech, idx) => (
+                        <span key={idx} className="px-3 py-1.5 bg-blue-900/30 text-blue-300 rounded-lg text-sm border border-blue-800/50">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Development Time */}
+                  <div className="p-4 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div className="flex items-center gap-3">
+                      <Clock className="w-5 h-5 text-green-400" />
+                      <span className="text-sm text-gray-300">
+                        <span className="font-semibold text-white">Built in 10 days:</span> From initial meeting to live deployment. Now used daily for 4+ months with continuous improvements based on feedback.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Screenshot Carousel */}
+                <div className="relative">
+                  <div className="rounded-2xl overflow-hidden border border-gray-700 bg-gray-800 shadow-xl shadow-black/20">
+                    {/* Browser Mockup Bar */}
+                    <div className="bg-gray-900 border-b border-gray-700 p-4">
+                      <div className="flex items-center gap-2">
+                        <div className="flex gap-2">
+                          <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                          <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                          <div className="w-3 h-3 rounded-full bg-green-400"></div>
+                        </div>
+                        <div className="flex-1 text-center">
+                          <div className="text-lg text-gray-500">Practice Management System</div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Image Container */}
+                    <div className="relative h-96 bg-gray-900">
+                      <div 
+                        className="absolute inset-0 cursor-pointer"
+                        onClick={() => handleZoom(doctorScreenshots[doctorCurrentSlide], 'doctor', doctorCurrentSlide)}
+                      >
+                        <div className="relative w-full h-full">
+                          <Image
+                            src={doctorScreenshots[doctorCurrentSlide]}
+                            alt={`Practice Management System Screenshot ${doctorCurrentSlide + 1}`}
+                            fill
+                            className="object-contain"
+                            sizes="(max-width: 800px) 100vw, 800px"
+                            priority={doctorCurrentSlide === 0}
+                          />
+                          {/* Slide Label */}
+                          <div className="absolute top-4 left-1/2 -translate-x-1/2 pointer-events-none z-20">
+                            <div className="bg-gradient-to-r from-gray-900/90 to-gray-800/90 backdrop-blur-md px-5 py-2.5 rounded-xl border border-cyan-600/40 shadow-lg">
+                              <div className="text-sm font-bold text-cyan-300 tracking-wider drop-shadow-lg">
+                                {['DASHBOARD', 'INCOME TRACKER', 'EXPENSE MANAGER', 'TASK SYSTEM', 'ANALYTICS'][doctorCurrentSlide]}
+                              </div>
+                              <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-cyan-400 rotate-45"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* Navigation Arrows */}
+                      <button 
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          setDoctorCurrentSlide((prev) => prev === 0 ? doctorScreenshots.length - 1 : prev - 1)
+                        }}
+                        className="absolute left-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 backdrop-blur-sm border border-gray-600 hover:bg-black/70 transition-all group z-10"
+                      >
+                        <ChevronLeft className="w-4 h-4 text-white group-hover:text-cyan-300 transition-colors" />
+                      </button>
+                      <button 
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          setDoctorCurrentSlide((prev) => prev === doctorScreenshots.length - 1 ? 0 : prev + 1)
+                        }}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 backdrop-blur-sm border border-gray-600 hover:bg-black/70 transition-all group z-10"
+                      >
+                        <ChevronRight className="w-4 h-4 text-white group-hover:text-cyan-300 transition-colors" />
+                      </button>
+                      
+                      {/* Slide Indicators */}
+                      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-1.5">
+                        {doctorScreenshots.map((_, idx) => (
+                          <button
+                            key={idx}
+                            onClick={(e) => {
+                              e.stopPropagation()
+                              setDoctorCurrentSlide(idx)
+                            }}
+                            className={`h-1.5 rounded-full transition-all duration-200 ${
+                              doctorCurrentSlide === idx 
+                                ? 'bg-white w-5' 
+                                : 'bg-gray-600 w-3 hover:bg-gray-400'
+                            }`}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-          {/* Navigation Arrows */}
-          <button 
-            onClick={(e) => {
-              e.stopPropagation()
-              setDoctorCurrentSlide((prev) => prev === 0 ? doctorScreenshots.length - 1 : prev - 1)
-            }}
-            className="absolute left-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 backdrop-blur-sm border border-gray-600 hover:bg-black/70 transition-all group z-10"
-          >
-            <ChevronLeft className="w-4 h-4 text-white group-hover:text-cyan-300 transition-colors" />
-          </button>
-          <button 
-            onClick={(e) => {
-              e.stopPropagation()
-              setDoctorCurrentSlide((prev) => prev === doctorScreenshots.length - 1 ? 0 : prev + 1)
-            }}
-            className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 backdrop-blur-sm border border-gray-600 hover:bg-black/70 transition-all group z-10"
-          >
-            <ChevronRight className="w-4 h-4 text-white group-hover:text-cyan-300 transition-colors" />
-          </button>
-          
-          {/* Slide Indicators */}
-          <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-1.5">
-            {doctorScreenshots.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={(e) => {
-                  e.stopPropagation()
-                  setDoctorCurrentSlide(idx)
-                }}
-                className={`h-1.5 rounded-full transition-all duration-200 ${
-                  doctorCurrentSlide === idx 
-                    ? 'bg-white w-5' 
-                    : 'bg-gray-600 w-3 hover:bg-gray-400'
-                }`}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
             {/* Project 2: PEM Educational Platform */}
             <div className="mb-32">
               <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -415,7 +435,7 @@ export default function Home() {
                             <div className="w-3 h-3 rounded-full bg-green-400"></div>
                           </div>
                           <div className="flex-1 text-center">
-                            <div className="text-sm text-gray-500">Medical Education Platform</div>
+                            <div className="text-lg text-gray-500">pemhomeopathy.com</div>
                           </div>
                         </div>
                       </div>
@@ -439,7 +459,7 @@ export default function Home() {
                             <div className="absolute top-4 left-1/2 -translate-x-1/2 pointer-events-none z-20">
                               <div className="bg-gradient-to-r from-gray-900/90 to-gray-800/90 backdrop-blur-md px-5 py-2.5 rounded-xl border border-purple-600/40 shadow-lg">
                                 <div className="text-sm font-bold text-purple-300 tracking-wider drop-shadow-lg">
-                                  {['HOMEPAGE','DOCTOR PROFILES','DOCTOR PROFILES', 'DOCTOR PROFILES', 'COURSES','COURSES', 'Live Classes'][pemCurrentSlide]}
+                                  {['HOMEPAGE','ABOUT PEM', 'DOCTOR PROFILE', 'DOCTOR PROFILE', 'COURSE PAGE','LIVE CLASSES', 'BOOKS LIBRARY'][pemCurrentSlide]}
                                 </div>
                                 <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-purple-400 rotate-45"></div>
                               </div>
@@ -490,141 +510,171 @@ export default function Home() {
                 </div>
                 
                 <div className="order-1 lg:order-2">
-                  <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-purple-900/30 text-purple-300 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
+                  <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-purple-900/30 text-purple-300 rounded-full text-base font-medium mb-6 backdrop-blur-sm">
                     <GraduationCap className="w-4 h-4" />
-                    Educational Platform
+                    Educational Platform • Live at pemhomeopathy.com
                   </div>
                   
-                  <h3 className="text-3xl font-bold text-white mb-4">Medical Education Platform</h3>
+                  <h3 className="text-3xl font-bold text-white mb-4">Personal Evolution Model Platform</h3>
                   <p className="text-xl text-gray-300 mb-8">
-                    Comprehensive platform for medical education—featuring multiple doctor profiles, course catalog, and resource library
+                    Complete educational website for Dr. Mahesh Gandhi's PEM methodology—30+ custom-coded pages featuring doctor profiles, course catalog, and resource library. Built from scratch, no WordPress.
                   </p>
                   
-                  <div className="grid grid-cols-2 gap-4 mb-8">
-                    {[
-                      { icon: <UserCheck className="w-5 h-5" />, title: '12+ Doctors', desc: 'Individual profile pages' },
-                      { icon: <GraduationCap className="w-5 h-5" />, title: '12+ Courses', desc: 'Detailed curriculum pages' },
-                      { icon: <BookOpen className="w-5 h-5" />, title: 'Resource Library', desc: 'Books & publications' },
-                      { icon: <Users className="w-5 h-5" />, title: '60+ Pages', desc: 'Interconnected content' }
-                    ].map((feature, idx) => (
-                      <div key={idx} className="p-4 bg-gray-800/50 rounded-xl border border-gray-700 backdrop-blur-sm">
-                        <div className="flex items-center gap-3 mb-2">
-                          <div className="p-2 rounded-lg bg-purple-900/30 text-purple-300">
-                            {feature.icon}
-                          </div>
-                          <div className="font-semibold text-white">{feature.title}</div>
-                        </div>
-                        <div className="text-sm text-gray-400 pl-11">{feature.desc}</div>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Image Preloading */}
-                  <div className="hidden">
-                    {doctorScreenshots.map((img, idx) => (
-                      <Image
-                        key={`doctor-preload-${idx}`}
-                        src={img}
-                        alt=""
-                        width={100}
-                        height={100}
-                        priority={idx === 0}
-                      />
-                    ))}
-                    {pemScreenshots.map((img, idx) => (
-                      <Image
-                        key={`pem-preload-${idx}`}
-                        src={img}
-                        alt=""
-                        width={100}
-                        height={100}
-                        priority={idx === 0}
-                      />
-                    ))}
-                  </div>
-                  
-                  {/* Features List */}
-                  <div className="space-y-3 mb-8">
-                    {[
-                      "Individual doctor profiles with credentials and specializations",
-                      "Comprehensive course pages with detailed curriculum information",
-                      "Resource library with medical publications and references",
-                      "Multi-level navigation system for easy content discovery",
-                      "Mobile-responsive design optimized for all devices"
-                    ].map((feature, idx) => (
-                      <div key={idx} className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-300">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                  
-                  {/* Technology */}
-                  <div className="mb-8">
-                    <h4 className="font-semibold text-white mb-4 flex items-center gap-2">
-                      <Database className="w-5 h-5 text-purple-400" />
-                      Built With:
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {['WordPress Custom Theme', 'Responsive Design', 'SEO Optimized', 'Content Management', 'Image Optimization'].map((tech, idx) => (
-                        <span key={idx} className="px-3 py-1.5 bg-purple-900/30 text-purple-300 rounded-lg text-sm border border-purple-800/50">
-                          {tech}
-                        </span>
-                      ))}
+                  {/* Client Feedback */}
+                  <div className="bg-gradient-to-r from-purple-900/20 to-pink-900/10 p-6 rounded-xl border border-purple-900/30 mb-8">
+                    <div className="flex items-center gap-3 mb-3">
+                      <Star className="w-5 h-5 text-purple-400" />
+                      <span className="text-lg font-bold text-white">Dr. Gandhi's Team:</span>
                     </div>
+                    <p className="text-lg text-gray-300 arial">
+                      "At the ageof 17, you have made this website—it's insane! It's very best. We are fully convinced and impressed with the work."
+</p>
+</div>
+{/* What It Does */}
+              <div className="grid grid-cols-2 gap-4 mb-8">
+                {[
+                  { icon: <UserCheck className="w-5 h-5" />, title: '8 Doctors', desc: 'Individual detailed profiles' },
+                  { icon: <GraduationCap className="w-5 h-5" />, title: '8 Courses', desc: 'Complete curriculum pages' },
+                  { icon: <BookOpen className="w-5 h-5" />, title: 'Books Library', desc: 'Publications & resources' },
+                  { icon: <Users className="w-5 h-5" />, title: '30+ Pages', desc: 'All interconnected content' }
+                ].map((feature, idx) => (
+                  <div key={idx} className="p-4 bg-gray-800/50 rounded-xl border border-gray-700 backdrop-blur-sm">
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="p-2 rounded-lg bg-purple-900/30 text-purple-300">
+                        {feature.icon}
+                      </div>
+                      <div className="text-lg font-semibold text-white">{feature.title}</div>
+                    </div>
+                    <div className="text-base text-gray-400 pl-11">{feature.desc}</div>
                   </div>
+                ))}
+              </div>
+
+              {/* Image Preloading */}
+              <div className="hidden">
+                {doctorScreenshots.map((img, idx) => (
+                  <Image
+                    key={`doctor-preload-${idx}`}
+                    src={img}
+                    alt=""
+                    width={100}
+                    height={100}
+                    priority={idx === 0}
+                  />
+                ))}
+                {pemScreenshots.map((img, idx) => (
+                  <Image
+                    key={`pem-preload-${idx}`}
+                    src={img}
+                    alt=""
+                    width={100}
+                    height={100}
+                    priority={idx === 0}
+                  />
+                ))}
+              </div>
+              
+              {/* What I Built */}
+              <div className="space-y-3 mb-8">
+                {[
+                  "All content written, designed, and coded by me from scratch",
+                  "8 individual doctor profiles with credentials, specializations, and experience",
+                  "8 detailed course pages with full curriculum and enrollment information",
+                  "Books library with medical publications and reference materials",
+                  "Fully responsive design—works perfectly on mobile, tablet, and desktop",
+                  "Used for course registrations and doctor directory—gets inquiries daily"
+                ].map((feature, idx) => (
+                  <div key={idx} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
+                    <span className="text-basetext-gray-300">{feature}</span>
+                  </div>
+                ))}
+              </div>
+              
+              {/* Technology */}
+              <div className="mb-8">
+                <h4 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                  <Database className="w-5 h-5 text-purple-400" />
+                  Built With:
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {['Custom HTML/CSS', 'JavaScript', 'MySQL Database', 'Responsive Design', 'SEO Optimized', 'Fast Loading'].map((tech, idx) => (
+                    <span key={idx} className="px-3 py-1.5 bg-purple-900/30 text-purple-300 rounded-lg text-sm border border-purple-800/50">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Visit Link */}
+              <div className="p-4 bg-purple-900/20 rounded-xl border border-purple-900/30">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <Zap className="w-5 h-5 text-purple-400" />
+                    <span className="text-white font-medium">Live at pemhomeopathy.com</span>
+                  </div>
+                  <a 
+                    href="https://pemhomeopathy.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-purple-300 hover:text-purple-200 transition-colors flex items-center gap-2"
+                  >
+                    Visit Site
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
-            {/* What the Systems Do */}
-            <div className="mt-24 bg-gradient-to-r from-blue-900/20 to-cyan-900/20 rounded-2xl p-8 border border-cyan-900/30">
-              <div className="max-w-4xl mx-auto">
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-white mb-4">
-                    What These Systems Do
-                  </h3>
-                  <p className="text-gray-300">
-                    Core functionality that makes clinic management easier
-                  </p>
+        {/* What Makes My Systems Different */}
+        <div className="mt-24 bg-gradient-to-r from-blue-900/20 to-cyan-900/20 rounded-2xl p-8 border border-cyan-900/30">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-white mb-4">
+                How I Build Differently
+              </h3>
+              <p className="text-lg text-gray-300">
+                Why doctors choose custom-built systems over templates
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                {
+                  icon: <Target className="w-6 h-6" />,
+                  title: "Built for Your Workflow",
+                  desc: "I spend time understanding exactly how you work—then build the system around YOUR process, not force you into a template."
+                },
+                {
+                  icon: <Zap className="w-6 h-6" />,
+                  title: "Fast Delivery",
+                  desc: "Most projects delivered in 10-14 days. I work full-time on your system, continuously communicate progress, and iterate based on your feedback."
+                },
+                {
+                  icon: <Shield className="w-6 h-6" />,
+                  title: "Ongoing Support",
+                  desc: "After deployment, I'm available for updates, fixes, and improvements. Your system evolves as your practice grows."
+                }
+              ].map((item, idx) => (
+                <div key={idx} className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 backdrop-blur-sm">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-3 rounded-lg bg-cyan-900/30 text-cyan-300">
+                      {item.icon}
+                    </div>
+                    <h4 className="text-lg font-bold text-white">{item.title}</h4>
+                  </div>
+                  <p className="text-gray-300 text-base leading-relaxed">{item.desc}</p>
                 </div>
-                
-                <div className="grid md:grid-cols-3 gap-6">
-                  {[
-                    {
-                      icon: <FileText className="w-6 h-6" />,
-                      title: "Financial Tracking",
-                      desc: "Automatic logging of all income and expenses. Monthly reports generated and ready for your accountant."
-                    },
-                    {
-                      icon: <Bell className="w-6 h-6" />,
-                      title: "Patient Follow-ups",
-                      desc: "Automated reminders for check-ups, test reports, and medication refills—sent via WhatsApp."
-                    },
-                    {
-                      icon: <Calendar className="w
-                      -6 h-6" />,
-title: "Staff Management",
-desc: "Duty rosters, leave tracking, and task assignment—all organized in one dashboard."
-}
-].map((item, idx) => (
-<div key={idx} className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 backdrop-blur-sm">
-<div className="flex items-center gap-3 mb-4">
-<div className="p-3 rounded-lg bg-cyan-900/30 text-cyan-300">
-{item.icon}
-</div>
-<h4 className="font-bold text-white">{item.title}</h4>
-</div>
-<p className="text-gray-300 text-sm leading-relaxed">{item.desc}</p>
-</div>
-))}
-</div>
-</div>
-</div>
-</div>
-</section>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-{/* About Section */}
+    {/* About Section */}
     <section id="about" className="py-24 bg-gray-900/30 backdrop-blur-sm">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-4xl mx-auto">
@@ -632,33 +682,37 @@ desc: "Duty rosters, leave tracking, and task assignment—all organized in one 
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               About Me
             </h2>
-            <p className="text-gray-300 text-lg">
-              Building custom solutions for medical practices
+            <p className="text-gray-300 text-xl">
+              How I started building for medical practices
             </p>
           </div>
 
           <div className="bg-gray-800/50 rounded-2xl p-8 border border-gray-700 backdrop-blur-sm">
             <div className="prose prose-invert max-w-none">
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                I specialize in building custom web applications for medical professionals in Nashik and across India. My focus is on creating systems that actually solve real problems—reducing paperwork, improving organization, and making clinic management more efficient.
+                I'm {age} years old and I've been coding since I was 16. I started building for doctors through my mentor—a practicing physician who showed me firsthand the tech problems medical practices face daily.
               </p>
               
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                I work closely with doctors to understand their specific needs, then build tailored solutions that fit their workflow. Every system is custom-made, not based on generic templates, which means it's designed exactly for how you work.
+                After seeing how they struggled with Excel files, manual data entry, and disconnected systems, I built my first practice management tool. It worked. They use it every day. So I kept building.
+              </p>
+
+              <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                I don't use WordPress or templates. Every system I build is custom-coded from scratch—designed specifically for how that practice operates. This takes longer, but it means the software fits your workflow perfectly instead of forcing you to adapt to generic tools.
               </p>
 
               <div className="mt-8">
-                <h3 className="text-xl font-bold text-white mb-4">Technical Skills:</h3>
+                <h3 className="text-xl font-bold text-white mb-4">What I Can Build:</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   {[
-                    'Custom web application development',
-                    'Database design & management (MySQL)',
-                    'Frontend: HTML, CSS, JavaScript',
-                    'Backend: PHP, API integration',
-                    'WordPress & CMS platforms',
-                    'Mobile-responsive design',
-                    'WhatsApp Business API',
-                    'Secure authentication systems'
+                    'Custom web applications (practice management, patient tracking)',
+                    'Professional medical websites (5-7 pages, delivered in under 2 weeks)',
+                    'Booking systems with WhatsApp integration',
+                    'Educational platforms for medical institutions',
+                    'Mobile-responsive designs (all systems work on phones)',
+                    'Database design and management',
+                    'Secure authentication systems',
+                    'Export/reporting features (CA-ready Excel files)'
                   ].map((skill, idx) => (
                     <div key={idx} className="flex items-start gap-3">
                       <Check className="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" />
@@ -670,8 +724,38 @@ desc: "Duty rosters, leave tracking, and task assignment—all organized in one 
 
               <div className="mt-8 p-6 bg-cyan-900/20 rounded-xl border border-cyan-900/30">
                 <p className="text-gray-300 leading-relaxed">
-                  <span className="font-bold text-white">My approach:</span> I believe technology should adapt to doctors, not the other way around. That's why every system I build is customized to your specific practice, your workflow, and your needs.
+                  <span className="font-bold text-white">My approach:</span> I work closely with you throughout development—continuous communication, regular demos, and iterations based on your feedback. The goal is to build something you'll actually use every day, not software that sits unused.
                 </p>
+              </div>
+
+              <div className="mt-8">
+                <h3 className="text-xl font-bold text-white mb-4">Technical Skills:</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {[
+                    { skill: 'HTML/CSS', level: 8.5 },
+                    { skill: 'JavaScript', level: 9.6 },
+                    { skill: 'MySQL', level: 8.9 },
+                    { skill: 'UI/UX Design', level: 9.4 },
+                    { skill: 'Responsive Design', level: 9.6 },
+                    { skill: 'API Integration', level: 8.5 },
+                    { skill: 'Database Design', level: 8.9 },
+                    { skill: 'Problem Solving', level: 9.5 }
+                  ].map((item, idx) => (
+                    <div key={idx} className="p-4 bg-gray-800/30 rounded-xl border border-gray-700">
+                      <div className="text-sm font-medium text-white mb-2">{item.skill}</div>
+                      <div className="flex gap-1">
+                        {[...Array(10)].map((_, i) => (
+                          <div 
+                            key={i} 
+                            className={`h-1 flex-1 rounded-full ${
+                              i < Math.floor(item.level) ? 'bg-cyan-400' : 'bg-gray-700'
+                            }`}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -687,7 +771,7 @@ desc: "Duty rosters, leave tracking, and task assignment—all organized in one 
             Let's Discuss Your Practice
           </h2>
           <p className="text-xl text-gray-300 mb-12">
-            Free consultation to understand your needs and explore how custom automation can help your clinic
+            Free consultation to understand your needs—no sales pitch, just exploring if custom software makes sense for you
           </p>
           
           <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700 max-w-2xl mx-auto mb-12 shadow-xl">
@@ -717,7 +801,7 @@ desc: "Duty rosters, leave tracking, and task assignment—all organized in one 
               
               {/* WhatsApp */}
               <a 
-                href="https://wa.me/917219632603?text=Hi%20Tanay,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20clinic%20automation."
+                href="https://wa.me/917219632603?text=Hi%20Tanay,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20custom%20software%20for%20my%20practice."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group block p-6 bg-gradient-to-r from-green-900/20 to-emerald-800/10 rounded-xl border border-green-700/30 hover:border-green-600 transition-all hover:scale-[1.02]"
@@ -738,7 +822,7 @@ desc: "Duty rosters, leave tracking, and task assignment—all organized in one 
               
               {/* Email */}
               <a 
-                href="mailto:tanay@scaleemailer.com?subject=Clinic%20Automation%20Inquiry&body=Hi%20Tanay,%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20clinic%20automation.%0A%0AWhen%20would%20be%20a%20good%20time%20to%20connect?"
+                href="mailto:tanay@scaleemailer.com?subject=Custom%20Software%20Inquiry&body=Hi%20Tanay,%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20custom%20software%20for%20my%20practice.%0A%0AWhen%20would%20be%20a%20good%20time%20to%20connect?"
                 className="group block p-6 bg-gradient-to-r from-purple-900/20 to-pink-800/10 rounded-xl border border-purple-700/30 hover:border-purple-600 transition-all hover:scale-[1.02]"
               >
                 <div className="flex items-center justify-between">
@@ -757,7 +841,7 @@ desc: "Duty rosters, leave tracking, and task assignment—all organized in one 
             </div>
             
             <div className="pt-8 mt-8 border-t border-gray-700">
-              <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
+              <div className="flex flex-wrap justify-center gap-6 text-base text-gray-400">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-green-400" />
                   <span>Free consultation</span>
@@ -775,7 +859,7 @@ desc: "Duty rosters, leave tracking, and task assignment—all organized in one 
           </div>
           
           {/* Location */}
-          <div className="flex justify-center items-center gap-2 text-gray-300">
+          <div className="flex justify-center items-center gap-2 text-lg text-gray-300">
             <MapPin className="w-5 h-5 text-cyan-400" />
             <span>Based in Nashik, Maharashtra • Serving across India</span>
           </div>
@@ -787,21 +871,21 @@ desc: "Duty rosters, leave tracking, and task assignment—all organized in one 
     <footer className="py-12 border-t border-gray-700">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center">
-              <Cpu className="w-4 h-4 text-white" />
+          <div className="flex items-center gap-2">
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center">
+              <Cpu className="w-5 h-5 text-white" />
             </div>
             <div>
               <div className="text-xl font-bold text-white">
                 Tanay Shinde
               </div>
-              <div className="text-sm text-gray-400">Medical Systems Developer</div>
+              <div className="text-lg text-gray-400">Medical Web Developer</div>
             </div>
           </div>
           
           <div className="text-gray-500 text-sm text-center md:text-right">
             <div>© {new Date().getFullYear()} Tanay Shinde. All rights reserved.</div>
-            <div className="mt-1">Built with Next.js • TypeScript • Tailwind CSS</div>
+            <div className="mt-1">Custom-built systems • No templates • Fast delivery</div>
           </div>
         </div>
       </div>
@@ -835,8 +919,8 @@ desc: "Duty rosters, leave tracking, and task assignment—all organized in one 
             currentZoomType === 'doctor' ? 'text-cyan-300' : 'text-purple-300'
           }`}>
             {currentZoomType === 'doctor' 
-              ? ['DASHBOARD', 'EXPENSE TRACKER', 'INCOME MANAGER', 'TASK SYSTEM', 'ANALYTICS'][zoomSlideIndex]
-              : ['HOMEPAGE','DOCTOR PROFILES','DOCTOR PROFILES', 'DOCTOR PROFILES', 'COURSES','COURSES', 'Live Classes'][zoomSlideIndex]
+              ? ['DASHBOARD', 'INCOME TRACKER', 'EXPENSE MANAGER', 'TASK SYSTEM', 'ANALYTICS'][zoomSlideIndex]
+              : ['HOMEPAGE','ABOUT PEM', 'DOCTOR PROFILE', 'DOCTOR PROFILE', 'COURSE PAGE','LIVE CLASSES', 'BOOKS LIBRARY'][zoomSlideIndex]
             }
           </div>
           <div className={`absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 ${
