@@ -28,6 +28,7 @@ export default function Home() {
     '/images/projects/doctor-system-2.jpg', 
     '/images/projects/doctor-system-3.jpg',
     '/images/projects/doctor-system-4.jpg',
+    '/images/projects/doctor-system-6.jpg',
     '/images/projects/doctor-system-5.jpg'
   ]
 
@@ -38,7 +39,9 @@ export default function Home() {
     '/images/projects/pem-system-4.jpg',
     '/images/projects/pem-system-5.jpg',
     '/images/projects/pem-system-6.jpg',
-    '/images/projects/pem-system-7.jpg'
+    '/images/projects/pem-system-7.jpg',
+    '/images/projects/pem-system-8.jpg',
+    '/images/projects/pem-system-9.jpg'
   ]
 
   const handleZoom = (imageSrc, type, index) => {
@@ -88,12 +91,18 @@ export default function Home() {
           <div className="container mx-auto px-6 lg:px-12">
             <div className="flex items-center justify-between h-20">
               {/* Logo */}
-              <div className="flex items-center gap-2">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center">
-                  <Cpu className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-2xl font-bold text-white">Tanay Shinde</span>
-              </div>
+            <div className="flex items-center gap-2">
+  <div className="w-8 h-8 relative">
+    <Image
+      src='/images/projects/Logo.png'  // Your logo image path
+      alt="Tanay Shinde Logo"
+      width={40}
+      height={40}
+      className="rounded-xl"
+    />
+  </div>
+  <span className="text-2xl font-bold text-white">Tanay Shinde</span>
+</div>
 
               {/* Desktop Navigation */}
               <nav className="hidden lg:flex items-center gap-8">
@@ -368,7 +377,7 @@ export default function Home() {
                           <div className="absolute top-4 left-1/2 -translate-x-1/2 pointer-events-none z-20">
                             <div className="bg-gradient-to-r from-gray-900/90 to-gray-800/90 backdrop-blur-md px-5 py-2.5 rounded-xl border border-cyan-600/40 shadow-lg">
                               <div className="text-sm font-bold text-cyan-300 tracking-wider drop-shadow-lg">
-                                {['DASHBOARD', 'INCOME TRACKER', 'EXPENSE MANAGER', 'TASK SYSTEM', 'ANALYTICS'][doctorCurrentSlide]}
+                                {['DASHBOARD', 'INCOME TRACKER', 'EXPENSE MANAGER', 'TASK SYSTEM', 'DUES MANAGER','ANALYTICS' ][doctorCurrentSlide]}
                               </div>
                               <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-cyan-400 rotate-45"></div>
                             </div>
@@ -459,7 +468,7 @@ export default function Home() {
                             <div className="absolute top-4 left-1/2 -translate-x-1/2 pointer-events-none z-20">
                               <div className="bg-gradient-to-r from-gray-900/90 to-gray-800/90 backdrop-blur-md px-5 py-2.5 rounded-xl border border-purple-600/40 shadow-lg">
                                 <div className="text-sm font-bold text-purple-300 tracking-wider drop-shadow-lg">
-                                  {['HOMEPAGE','ABOUT PEM', 'DOCTOR PROFILE', 'DOCTOR PROFILE', 'COURSE PAGE','LIVE CLASSES', 'BOOKS LIBRARY'][pemCurrentSlide]}
+                                  {['HOMEPAGE','DOCTOR PROFILE', 'DOCTOR PROFILE', 'DOCTOR PROFILE', 'COURSE PAGE','COURSE PAGE',  'LIVE CLASSES', 'BOOKS LIBRARY', 'Gallery'][pemCurrentSlide]}
                                 </div>
                                 <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-purple-400 rotate-45"></div>
                               </div>
@@ -527,7 +536,7 @@ export default function Home() {
                       <span className="text-lg font-bold text-white">Dr. Gandhi's Team:</span>
                     </div>
                     <p className="text-lg text-gray-300 arial">
-                      "At the ageof 17, you have made this website—it's insane! It's very best. We are fully convinced and impressed with the work."
+                      "At the age of 17, you have made this website—it's insane! It's very best. We are fully convinced and impressed with the work."
 </p>
 </div>
 {/* What It Does */}
@@ -871,17 +880,23 @@ export default function Home() {
     <footer className="py-12 border-t border-gray-700">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center">
-              <Cpu className="w-5 h-5 text-white" />
-            </div>
-            <div>
-              <div className="text-xl font-bold text-white">
-                Tanay Shinde
-              </div>
-              <div className="text-lg text-gray-400">Medical Web Developer</div>
-            </div>
-          </div>
+        <div className="flex items-center gap-2">
+  <div className="w-8 h-8 relative">
+    <Image
+      src='/images/projects/Logo.png'  // Your logo image path
+      alt="Tanay Shinde Logo"
+      width={40}
+      height={40}
+      className="rounded-lg"
+    />
+  </div>
+  <div>
+    <div className="text-xl font-bold text-white">
+      Tanay Shinde
+    </div>
+    <div className="text-lg text-gray-400">Medical Web Developer</div>
+  </div>
+</div>
           
           <div className="text-gray-500 text-sm text-center md:text-right">
             <div>© {new Date().getFullYear()} Tanay Shinde. All rights reserved.</div>
@@ -919,8 +934,8 @@ export default function Home() {
             currentZoomType === 'doctor' ? 'text-cyan-300' : 'text-purple-300'
           }`}>
             {currentZoomType === 'doctor' 
-              ? ['DASHBOARD', 'INCOME TRACKER', 'EXPENSE MANAGER', 'TASK SYSTEM', 'ANALYTICS'][zoomSlideIndex]
-              : ['HOMEPAGE','ABOUT PEM', 'DOCTOR PROFILE', 'DOCTOR PROFILE', 'COURSE PAGE','LIVE CLASSES', 'BOOKS LIBRARY'][zoomSlideIndex]
+              ? ['DASHBOARD', 'INCOME TRACKER', 'EXPENSE MANAGER', 'TASK SYSTEM', 'DUES MANAGER','ANALYTICS'][zoomSlideIndex]
+              : ['HOMEPAGE','DOCTOR PROFILE', 'DOCTOR PROFILE', 'DOCTOR PROFILE', 'COURSE PAGE','COURSE PAGE',  'LIVE CLASSES', 'BOOKS LIBRARY','Gallery'][zoomSlideIndex]
             }
           </div>
           <div className={`absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 ${
@@ -1000,5 +1015,5 @@ export default function Home() {
     </div>
   )}
 </div>
-)
+)   
 }
