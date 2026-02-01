@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: 'Tanay Shinde Portfolio',
     images: [
       {
-        url: '/og-image.png', // Add an OG image in public/ folder
+        url: '/images/projects/og-image.png', // Add an OG image in public/ folder
         width: 1200,
         height: 630,
         alt: 'Tanay Shinde - Medical Web Developer',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Tanay Shinde | Medical Web Developer',
     description: 'Custom practice management systems for doctors. Built from scratch, no templates.',
-    images: ['/og-image.png'],
+    images: ['/images/projects/og-image.png'],
     creator: '@tanayshinde',
   },
   icons: {
