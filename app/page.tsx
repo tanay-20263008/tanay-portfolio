@@ -1272,7 +1272,7 @@ export default function Home() {
           <div style={{ position: 'absolute', inset: 0, zIndex: -1, cursor: 'pointer' }} onClick={() => setIsZoomOpen(false)} />
         </div>
       )}
-
+                         
       {/* Preload images */}
       <div style={{ display: 'none' }}>
         {[...doctorScreenshots, ...pemScreenshots, ...drWebScreenshots, ...hospitalScreenshots].map((img, i) => (
@@ -1281,4 +1281,4 @@ export default function Home() {
       </div>
     </div>
   )
-}
+}       
