@@ -726,24 +726,26 @@
     .tl.red { background: #ff5f57; }
     .tl.yellow { background: #febc2e; }
     .tl.green { background: #28c840; }
-    .url-bar {
-      flex: 1;
-      background: var(--white);
-      border: 1px solid #dde1e7;
-      border-radius: 6px;
-      padding: 5px 12px;
-      font-size: 11px;
-      color: var(--grey-text);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
+.url-bar {
+  flex: 1;
+  background: var(--white);
+  border: 1px solid #dde1e7;
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 11px;
+  color: var(--grey-text);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
     .url-bar svg { width: 11px; height: 11px; color: #22c55e; flex-shrink: 0; }
-    .browser-screen {
-      position: relative;
-      overflow: hidden;
-      height: 300px;
-    }
+.browser-screen {
+  position: relative;
+  overflow: hidden;
+}
     .browser-screen::before {
       content: '';
       position: absolute;
@@ -755,16 +757,17 @@
     }
 .browser-screen img {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
   transition: transform 0.45s cubic-bezier(.16,1,.3,1);
-  object-fit: cover;
-  object-position: top;
+  object-fit: contain;
   transform: scale(1);
   transform-origin: center center;
 }
-.browser-mockup:hover .browser-screen img {
-  transform: scale(1.07);
+@media (hover: hover) {
+  .browser-mockup:hover .browser-screen img {
+    transform: scale(1.07);
+  }
 }
 
     /* ── PROCESS SECTION ── */
@@ -1293,6 +1296,11 @@
       .hero-canvas-wrap { display: none; }
       .project-block, .project-block.reverse { grid-template-columns: 1fr; direction: ltr; gap: 40px; }
       .why-grid, .testi-grid { grid-template-columns: 1fr; }
+      .proj-num {
+  font-size: 70px;
+  top: -16px;
+  left: -6px;
+}
       .about-inner { grid-template-columns: 1fr; gap: 60px; }
       .contact-cards { grid-template-columns: 1fr; }
       #services, .projects-header, .project-block, #testimonials, #about, #contact, footer, #why, #numbers .numbers-inner, .process-inner { padding-left: 24px; padding-right: 24px; }
@@ -1313,12 +1321,27 @@
       .process-steps { grid-template-columns: 1fr; }
       .numbers-inner { grid-template-columns: 1fr 1fr; }
     }
-    @media (max-width: 480px) {
-      .hero-headline { font-size: 46px; }
-      .hero-btns { flex-direction: column; }
-      .btn-primary, .btn-outline { text-align: center; justify-content: center; }
-      .stat-pills { gap: 8px; }
-    }
+  @media (max-width: 480px) {
+  .hero-headline { font-size: 46px; }
+  .hero-btns { flex-direction: column; }
+  .btn-primary, .btn-outline { text-align: center; justify-content: center; }
+  .stat-pills { gap: 8px; }
+  .stat-pill { padding: 6px 12px; font-size: 11.5px; }
+  .service-card { padding: 24px; }
+  .why-card { padding: 32px 24px; }
+  .testi-card { padding: 32px 24px; }
+  .process-note { padding: 20px 22px; font-size: 13.5px; }
+  .why-big-num { font-size: 80px; top: -10px; right: 10px; }
+  .numbers-inner { padding: 0 20px; }
+}
+@media (max-width: 600px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+  }
+}
   </style>
 </head>
 <body>
